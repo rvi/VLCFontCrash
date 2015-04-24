@@ -29,7 +29,7 @@ Backtrace of the app :
     frame #21: 0x0000000114e94268 libsystem_pthread.dylib`_pthread_body + 131
     frame #22: 0x0000000114e941e5 libsystem_pthread.dylib`_pthread_start + 176
     frame #23: 0x0000000114e9241d libsystem_pthread.dylib`thread_start + 13
-    ```
+```
 
 
 ### Primary Investigation
@@ -74,6 +74,6 @@ If I can't test it myself, I won't submit a patch.
 
 I've got this popup for few minutes, and after the video is playing correctly.
 
-[VLC_Popup](vlcFontBuilding.png)
+[VLC_Popup](https://github.com/rvi/VLCFontCrash/blob/master/vlcFontBuilding.png)
 
 

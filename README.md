@@ -74,6 +74,6 @@ If I can't test it myself, I won't submit a patch.
 
 I've got this popup for few minutes, and after the video is playing correctly.
 
-[VLC_Popup](https://github.com/rvi/VLCFontCrash/blob/master/vlcFontBuilding.png?raw=true)
+![VLC_Popup](https://github.com/rvi/VLCFontCrash/blob/master/vlcFontBuilding.png?raw=true)
 
 

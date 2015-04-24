@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let player = VLCMediaPlayer()
 
+    @IBOutlet weak var vlcView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        player.drawable = vlcView
+        let media = VLCMedia(URL: NSURL(string: "https://dl.dropboxusercontent.com/u/16637460/video.mkv"))
+        player.setMedia(media)
+        
+        player.play()
     }
 
     override func didReceiveMemoryWarning() {

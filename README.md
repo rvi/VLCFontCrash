@@ -70,3 +70,10 @@ I tried to compile VLC code on my mac (OSX 10.10.3, Xcode 6.3.1) and it didn't w
 If I can't test it myself, I won't submit a patch.
 
 
+### Playing the same file on a mac with VLC 2.2.1
+
+I've got this popup for few minutes, and after the video is playing correctly.
+
+[VLC_Popup](vlcFontBuilding.png)
+
+

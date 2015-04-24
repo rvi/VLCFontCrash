@@ -13,6 +13,7 @@
 		9383DC901AEA39DC00B05FAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9383DC8F1AEA39DC00B05FAB /* Images.xcassets */; };
 		9383DC931AEA39DC00B05FAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9383DC911AEA39DC00B05FAB /* LaunchScreen.xib */; };
 		9383DC9F1AEA39DC00B05FAB /* VLCFontCrashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9383DC9E1AEA39DC00B05FAB /* VLCFontCrashTests.swift */; };
+		C5DAF6EAC036B5BAAAC69058 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608D5954EC81BF01B66935 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49012C11DBA3189BD263A2E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		734A68C1045F15E3B9660351 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9383DC831AEA39DC00B05FAB /* VLCFontCrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLCFontCrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9383DC871AEA39DC00B05FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9383DC881AEA39DC00B05FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		9383DC981AEA39DC00B05FAB /* VLCFontCrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLCFontCrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9383DC9D1AEA39DC00B05FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9383DC9E1AEA39DC00B05FAB /* VLCFontCrashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCFontCrashTests.swift; sourceTree = "<group>"; };
+		FD608D5954EC81BF01B66935 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DAF6EAC036B5BAAAC69058 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E2F565EAD0288470FC3AB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				734A68C1045F15E3B9660351 /* Pods.debug.xcconfig */,
+				49012C11DBA3189BD263A2E6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9383DC7A1AEA39DB00B05FAB = {
 			isa = PBXGroup;
 			children = (
 				9383DC851AEA39DC00B05FAB /* VLCFontCrash */,
 				9383DC9B1AEA39DC00B05FAB /* VLCFontCrashTests */,
 				9383DC841AEA39DC00B05FAB /* Products */,
+				04E2F565EAD0288470FC3AB4 /* Pods */,
+				EEBD2E34C1471FEB5C8AFE5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +128,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EEBD2E34C1471FEB5C8AFE5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD608D5954EC81BF01B66935 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9383DCA21AEA39DC00B05FAB /* Build configuration list for PBXNativeTarget "VLCFontCrash" */;
 			buildPhases = (
+				A827879134160C92AC5E75CF /* Check Pods Manifest.lock */,
 				9383DC7F1AEA39DB00B05FAB /* Sources */,
 				9383DC801AEA39DB00B05FAB /* Frameworks */,
 				9383DC811AEA39DB00B05FAB /* Resources */,
+				FC9DBCB9578B5F838E2A0305 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +232,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A827879134160C92AC5E75CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9DBCB9578B5F838E2A0305 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9383DC7F1AEA39DB00B05FAB /* Sources */ = {
@@ -340,6 +399,7 @@
 		};
 		9383DCA31AEA39DC00B05FAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734A68C1045F15E3B9660351 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VLCFontCrash/Info.plist;
@@ -350,6 +410,7 @@
 		};
 		9383DCA41AEA39DC00B05FAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49012C11DBA3189BD263A2E6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VLCFontCrash/Info.plist;
@@ -411,6 +472,7 @@
 				9383DCA41AEA39DC00B05FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9383DCA51AEA39DC00B05FAB /* Build configuration list for PBXNativeTarget "VLCFontCrashTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +481,7 @@
 				9383DCA71AEA39DC00B05FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -76,4 +76,7 @@ I've got this popup for few minutes, and after the video is playing correctly.
 
 ![VLC_Popup](https://github.com/rvi/VLCFontCrash/blob/master/vlcFontBuilding.png?raw=true)
 
+### VLC ticket
+
+https://trac.videolan.org/vlc/ticket/14459
 
